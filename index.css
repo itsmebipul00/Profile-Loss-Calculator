@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+
+/* Layout */
+.container{
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.con{
+    margin-top: 2em;
+}
+
+.con-title{
+    background: tan;
+}
+
+h1{
+    margin: 0;
+    padding: 2em 2em;
+}
+
+main{
+    margin-top: 5em;
+}
+
+/* Input */
+.input{
+    padding: 1.5em;
+    border: 0;
+    border-bottom: 1px solid black ;
+    margin-left: 1em;
+}
+
+.input-label{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+/* Button */
+.btn{
+    background: black;
+    color: aliceblue;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 30%;
+    font-size: 1.5em;
+}
+.btn:hover,
+.btn:focus{
+    background: green;
+    color: aliceblue;
+}
+
+/* Output message typography */
+.profit{
+    color: green;
+}
+
+.loss{
+    color: red;
+}
+
+.noProfitNorLoss{
+    color: brown;
+}
+
+.loss, .profit, .noProfitNorLoss{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.output{
+    margin-bottom: 3em;
+}
+
+
+/* Footer */
+
+.con-footer{
+    background: gainsboro;
+}
+
+
+.footer{
+    padding: 2em;
+}
+
+.svg{
+    margin: 1em;
+    padding: 0.5em;
+}
