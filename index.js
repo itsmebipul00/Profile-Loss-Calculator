@@ -1,17 +1,19 @@
 
 let costPrice = document.querySelector(".cost-price");
 let sellingPrice = document.querySelector(".selling-price");
+let buyingStocks = document.querySelector(".buying-stocks");
 let submitBtn = document.querySelector(".btn");
 let output = document.querySelector(".output");
 
 
-submitBtn.addEventListener("click", submitHandler);
 
 function submitHandler() {
-  let cp = Number(costPrice.value);
-  let sp = Number(sellingPrice.value);
+  // console.log(buyingStocks.value, costPrice.value, sellingPrice.value)
 
-  calculateProfitAndLoss(cp, sp);
+    let cp = Number(costPrice.value*buyingStocks.value);
+    let sp = Number(sellingPrice.value);
+    calculateProfitAndLoss(cp, sp);
+
 }
 
 
@@ -44,3 +46,5 @@ function calculateProfitAndLoss(cp, sp) {
 function showOutput(message) {
   output.innerHTML = message;
 }
+
+submitBtn.addEventListener("click", submitHandler);
