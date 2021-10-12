@@ -8,10 +8,10 @@ let output = document.querySelector(".output");
 
 
 function submitHandler() {
-  // console.log(buyingStocks.value, costPrice.value, sellingPrice.value)
+
 
     let cp = Number(costPrice.value*buyingStocks.value);
-    let sp = Number(sellingPrice.value);
+    let sp = Number(sellingPrice.value*buyingStocks.value);
     calculateProfitAndLoss(cp, sp);
 
 }
